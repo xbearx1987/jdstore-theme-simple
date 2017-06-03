@@ -18,323 +18,407 @@
  @import "bootstrap";
  @import "font-awesome";
 
- /*===== 网站通用设置 ======*/
- body {
-   overflow-x: hidden; //裁切页面内容，超出视窗不显示
-   letter-spacing: 1px; //文字间距
-   font-size: 14px; //文字大小
-   position: relative; //设定为相对位置
+/*===== 网站通用设置 ======*/
+body {
+  overflow-x: hidden; //裁切页面内容，超出视窗不显示
+  letter-spacing: 1px; //文字间距
+  font-size: 14px; //文字大小
+  position: relative; //设定为相对位置
 
-   a {
-     text-decoration:none !important; //文字连结移除底线
-   }
+  a {
+    text-decoration:none !important; //文字连结移除底线
+  }
 
-   /*===== 基础栏位设定======*/
-   .width-25 {
-     width: 25%;
-   }
+  /*===== 基础栏位设定======*/
+  .width-25 {
+    width: 25%;
+  }
 
-   .width-50 {
-     width: 50%;
-   }
+  .width-50 {
+    width: 50%;
+  }
 
-   .width-75 {
-     width: 75%;
-   }
+  .width-75 {
+    width: 75%;
+  }
 
-   .width-100 {
-     width: 100%;
-   }
- }
+  .width-100 {
+    width: 100%;
+  }
+}
 
- /*===== Navbar 导览列 ======*/
- .navbar-default {
-   background: rgba(0,0,0,0.5); //半透明背景
+/*===== Navbar 导览列 ======*/
+.navbar-default {
+  background: rgba(0,0,0,0.5); //半透明背景
 
-   /* 文字连结 */
-   a {
-     color: #fff !important;
-   }
+  /* 文字连结 */
+  a {
+    color: #fff !important;
+  }
 
-   a:hover,
-   a:active,
-   a:focus {
-     color: #0070DE !important;
-   }
+  a:hover,
+  a:active,
+  a:focus {
+    color: #0070DE !important;
+  }
 
-   /*===== 导览列滑动特效 ======*/
-   &.scroll_navbar {
-     background-color: #fff; //背景颜色
+  /*===== 导览列滑动特效 ======*/
+  &.scroll_navbar {
+    background-color: #fff; //背景颜色
 
-     /* 文字连结 */
-     a {
-       color: #000 !important;
-     }
-     
-     a:hover,
-     a:active,
-     a:focus {
-       color: #0070DE !important;
-     }
-   }
+    /* 文字连结 */
+    a {
+      color: #000 !important;
+    }
 
-   /*===== Logo ======*/
-   .logo-box {
-     margin-right: 15px;
-     font-size: 20px;
-   }
+    a:hover,
+    a:active,
+    a:focus {
+      color: #0070DE !important;
+    }
+  }
 
-   /*===== Dropdown ======*/
-   .dropdown-menu{
-     background-color: #fff;
-     min-width: 175px;
+  /*===== Logo ======*/
+  .logo-box {
+    margin-right: 15px;
+    font-size: 20px;
+  }
 
-     /* 连结 */
-     a {
-       color: #000 !important;
-       padding: 8px 17px;
-     }
+  /*===== Dropdown ======*/
+  .dropdown-menu{
+    background-color: #fff;
+    min-width: 175px;
 
-     a:hover {
-       background-color: #f0f0f0;
-       color: #0070DE !important;
-     }
-   }
+    /* 连结 */
+    a {
+      color: #000 !important;
+      padding: 8px 17px;
+    }
 
-   /* 下拉选单三角箭头 */
-   .dropdown-menu:before {
-     content: "";
-     border-bottom: 10px solid #fff;
-     border-right: 10px solid transparent;
-     border-left: 10px solid transparent;
-     position: absolute;
-     top: -10px;
-     right: 16px;
-     z-index: 10;
-   }
+    a:hover {
+      background-color: #f0f0f0;
+      color: #0070DE !important;
+    }
+  }
 
-   /* 搜索栏 */
-   .search-box {
-     margin-top: 7.5px;
+  /* 下拉选单三角箭头 */
+  .dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 10;
+  }
 
-     /* 输入框 */
-     input {
-       height: 35px;
-     }
+  /* 搜索栏 */
+  .search-box {
+    margin-top: 7.5px;
 
-     /* 按钮 */
-     button {
-       padding: 5px 10px 5px 10px;
-       height: 35px;
-     }
-   }
- }
+    /* 输入框 */
+    input {
+      height: 35px;
+    }
 
- /*===== Footer 页脚 ======*/
- .footer{
-   text-align: center;
-   min-height: 175px; //最小高度
-   background-color: #222;
-   padding: 15px 0;
-   color: #fff;
+    /* 按钮 */
+    button {
+      padding: 5px 10px 5px 10px;
+      height: 35px;
+    }
+  }
+}
 
-   /* 标题 */
-   h4 {
-     font-size: 16px;
-     margin-top: 25px;
-     margin-bottom: 15px;
-   }
+/*===== Footer 页脚 ======*/
+.footer{
+  text-align: center;
+  min-height: 175px; //最小高度
+  background-color: #222;
+  padding: 15px 0;
+  color: #fff;
 
-   /* 连结 */
-   a {
-     text-decoration:none;
-     color: #ddd;
-   }
+  /* 标题 */
+  h4 {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
 
-   a:hover,
-   a:active,
-   a:focus {
-     color: #0070DE;
-   }
- }
+  /* 连结 */
+  a {
+    text-decoration:none;
+    color: #ddd;
+  }
 
- /*===== 首页通用设置 =====*/
- .welcome-box {
-   /* 副标题 */
-   h2 {
-     font-size: 24px;
-     font-weight: 600;
-   }
+  a:hover,
+  a:active,
+  a:focus {
+    color: #0070DE;
+  }
+}
 
-   /* 短分隔线 */
-   .short-line {
-     background: #0070DE;
-     margin: 15px auto 30px auto;
-     width: 150px;
-     height: 1.5px;
-   }
+/*===== 首页通用设置 =====*/
+.welcome-box {
+  /* 副标题 */
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
 
-   /* 按钮 */
-   .btn-push {
-     background-color: transparent;
-     color: #fff;
-     background-color: rgba(0, 0, 0, 0.5); //半透明背景
-     padding: 10px 20px;
-     font-size: 20px;
+  /* 短分隔线 */
+  .short-line {
+    background: #0070DE;
+    margin: 15px auto 30px auto;
+    width: 150px;
+    height: 1.5px;
+  }
 
-     /* 显示特效 */
-     -webkit-transition: all 0.4s ease-in-out;
-     -moz-transition: all 0.4s ease-in-out;
-     -ms-transition: all 0.4s ease-in-out;
-     -o-transition: all 0.4s ease-in-out;
-     transition: all 0.4s ease-in-out;
-   }
+  /* 按钮 */
+  .btn-push {
+    background-color: transparent;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); //半透明背景
+    padding: 10px 20px;
+    font-size: 20px;
 
-   /* 按钮-鼠标滑动效果 */
-   .btn-push:hover {
-     background-color: #0070DE;
-     border-color: #0070DE;
-   }
- }
+    /* 显示特效 */
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
 
- /*===== Intro 首页-广告轮播 =====*/
- .intro-box {
-   /*===== 轮播内容 =====*/
-   .item {
-     /* 标题 */
-     h3 {
-       margin-top: -40%; //标题高度
-       font-size: 50px; //文字大小
-       letter-spacing: 5px; //文字间距
-     }
+  /* 按钮-鼠标滑动效果 */
+  .btn-push:hover {
+    background-color: #0070DE;
+    border-color: #0070DE;
+  }
+}
 
-     /* 内文 */
-     p {
-       font-size: 20px;
-     }
+/*===== Intro 首页-广告轮播 =====*/
+.intro-box {
+  /*===== 轮播内容 =====*/
+  .item {
+    /* 标题 */
+    h3 {
+      margin-top: -40%; //标题高度
+      font-size: 50px; //文字大小
+      letter-spacing: 5px; //文字间距
+    }
 
-     /* 图片 */
-     img {
-       width: 100%;
-     }
-   }
+    /* 内文 */
+    p {
+      font-size: 20px;
+    }
 
-   /*===== 换页按钮 =====*/
-   .carousel-control {
-     span {
-       margin-top: 145%; //按钮高度
-       font-size: 50px; //按钮大小
-     }
-   }
- }
+    /* 图片 */
+    img {
+      width: 100%;
+    }
+  }
 
- /*===== Story 首页-品牌故事 =====*/
- .story-box {
-   background-color: #fff;
-   text-align: center;
-   padding: 25px 62.5px 50px 62.5px; //板块间隔
+  /*===== 换页按钮 =====*/
+  .carousel-control {
+    span {
+      margin-top: 145%; //按钮高度
+      font-size: 50px; //按钮大小
+    }
+  }
+}
 
-   /* 标题 */
-   h3 {
-     font-size: 20px;
-     text-align: left;
-   }
+/*===== Story 首页-品牌故事 =====*/
+.story-box {
+  background-color: #fff;
+  text-align: center;
+  padding: 25px 62.5px 50px 62.5px; //板块间隔
 
-   /* 内文 */
-   p {
-     color: #333;
-     line-height: 24px;
-     text-align: justify;
-   }
+  /* 标题 */
+  h3 {
+    font-size: 20px;
+    text-align: left;
+  }
 
-   /* 图片 */
-   img {
-     width: 150px;
-     border-radius: 50%;
-   }
+  /* 内文 */
+  p {
+    color: #333;
+    line-height: 24px;
+    text-align: justify;
+  }
 
-   /* 分隔线 */
-   hr {
-     height: 1.5px;
-     background-color: #666;
-   }
- }
+  /* 图片 */
+  img {
+    width: 150px;
+    border-radius: 50%;
+  }
 
- /*===== Categories 首页-商品分类 =====*/
- .categories-box {
-   background-color: #f8f8f8;
-   text-align: center;
+  /* 分隔线 */
+  hr {
+    height: 1.5px;
+    background-color: #666;
+  }
+}
 
-   /* 图片 */
-   img {
-     width: 300px;
-   }
+/*===== Service 首页-服务优势 =====*/
+.service-box {
+  background-color: #f8f8f8;
+  text-align: center !important;
+  padding: 25px 62.5px 50px 62.5px; //板块间隔
 
-   /*===== Content 分类內容 =====*/
-   .category-content {
-     padding: 50px 0 0 0;
+  /* 图片 */
+  img {
+    width: 100px;
+  }
 
-     /* 标题 */
-     h3 {
-       padding: 20px 0 20px 0;
-       font-size: 18px;
-     }
+  /*===== 内容区块 =====*/
+  .box {
+    margin: 0 25px 0 25px;
 
-     /* 内文 */
-     p {
-       padding: 0 62.5px 50px 62.5px;
-       text-align: justify;
-       color: #666;
-     }
-   }
- }
+    /* 标题 */
+    h3 {
+      font-size: 18px;
+    }
 
- /*===== Show 首页-推荐商品 =====*/
- .show-box {
-   background-color: #fff;
-   text-align: center;
-   padding: 50px 0 50px 0;
+    /* 内文 */
+    p {
+      color: #666;
+      line-height: 24px;
+      margin-top: 25px;
+      text-align: justify;
+    }
+  }
+}
 
-   /* 图片 */
-   img {
-     width: 100%;
-   }
+/*===== Categories 首页-商品分类 =====*/
+.categories-box {
+  background-color: #fff;
+  text-align: center;
 
-   /* 图片区块 */
-   .box {
-     margin-top: 15px;
-     box-shadow: 2px 2px 5px #888;
-   }
+  /* 图片 */
+  img {
+    width: 300px;
+  }
 
-   /* 图片区块-鼠标滑动效果 */
-   .box:hover {
-     opacity: 0.6;
-   }
+  /*===== Content 分类內容 =====*/
+  .category-content {
+    padding: 50px 0 0 0;
 
-   /* 文字区块 */
-   .content {
-     margin-top: 15px;
-     color: #000;
-   }
- }
+    /* 标题 */
+    h3 {
+      padding: 20px 0 20px 0;
+      font-size: 18px;
+    }
 
- /*===== Brands 首页-合作伙伴 =====*/
- .brand-box {
-   background-color: #f8f8f8;
-   text-align: center;
-   padding: 50px 0 50px 0;
+    /* 内文 */
+    p {
+      padding: 0 62.5px 50px 62.5px;
+      text-align: justify;
+      color: #666;
+    }
+  }
+}
 
-   /* 图片 */
-   img {
-     margin: 10px 15px 10px 15px;
-     width: 150px;
-   }
- }
+/*===== Show 首页-推荐商品 =====*/
+.show-box {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 50px 0 50px 0;
 
- /*===== Push 首页-立即购买 =====*/
- .push-box {
-   text-align: center;
-   padding: 75px 0 0 0;
-   height: 200px;
-   background: image_url("start.jpg") no-repeat scroll top center/ cover; //背景图片
- }
+  /* 图片 */
+  img {
+    width: 100%;
+  }
+
+  /* 图片区块 */
+  .box {
+    margin-top: 15px;
+    box-shadow: 2px 2px 5px #888;
+  }
+
+  /* 图片区块-鼠标滑动效果 */
+  .box:hover {
+    opacity: 0.6;
+  }
+
+  /* 文字区块 */
+  .content {
+    margin-top: 15px;
+    color: #000;
+  }
+}
+
+/*===== Show 首页-推荐商品 =====*/
+.feedback-box {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 0 125px 0;
+
+  /* 标题 */
+  strong {
+    margin-top: 25px;
+    color: #4A6BB5;
+  }
+
+  /* 图片 */
+  img {
+    width: 80px;
+    margin: 0 auto 25px auto;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+  }
+
+  /* 文字 */
+  p {
+    color: #666;
+    max-width: 550px;
+    margin: 0 auto 25px auto;
+  }
+
+  /* 按钮设置 */
+  .carousel-indicators {
+    bottom: -70px; //按钮位置
+
+    /* 按钮 */
+    li {
+      background-color: #ddd;
+      height: 12.5px;
+      width: 12.5px;
+      margin: 0 5px;
+      border-radius: 0;
+
+      /* 按钮转向45度 */
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    /* 按钮-启动效果 */
+    li.active {
+      background-color: #4A6BB5;
+    }
+  }
+}
+
+/*===== Brands 首页-合作伙伴 =====*/
+.brand-box {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 50px 0 50px 0;
+
+  /* 图片 */
+  img {
+    margin: 10px 15px 10px 15px;
+    width: 150px;
+  }
+}
+
+/*===== Push 首页-立即购买 =====*/
+.push-box {
+  text-align: center;
+  padding: 75px 0 0 0;
+  height: 200px;
+  background: image_url("start.jpg") no-repeat scroll top center/ cover; //背景图片
+}
