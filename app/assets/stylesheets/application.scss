@@ -70,7 +70,7 @@
      a {
        color: #000 !important;
      }
-     
+
      a:hover,
      a:active,
      a:focus {
@@ -337,4 +337,96 @@
    padding: 75px 0 0 0;
    height: 200px;
    background: image_url("start.jpg") no-repeat scroll top center/ cover; //背景图片
+ }
+
+
+ /*===== 商品列表通用设置 ======*/
+ .product-box {
+   text-align: center;
+   padding: 0 0 100px 0;
+
+   a {
+     color: #666; //连结字体颜色
+   }
+
+   a:hover {
+     color: #eb5424 !important;
+
+     img {
+       opacity: 0.75; //鼠标移至产品图上的效果
+     }
+   }
+
+   .btn {
+     background-color: #fff; //按钮底色
+     margin: 0 10px 0 10px;
+   }
+
+   .btn:hover,
+   .btn:focus {
+     color: #eb5424;
+   }
+
+   /* 广告图 */
+   .intro-box {
+     text-align: center;
+
+     img {
+       width: 100%;
+       margin-bottom: 20px;
+     }
+   }
+
+   /* 商品类型 & 品牌选单 */
+   .menu-box {
+
+   }
+
+   /* 页面路径 & 排序  */
+   .path-sort-box {
+     text-align: left;
+     height: 20px;
+
+     .left-box {
+      float: left;
+     }
+
+     .right-box {
+       float: right;
+
+       button {
+         margin: -15px 0 -15px 0;
+         padding: 7.5px 10px 7.5px 10px;
+         border: 2px solid #666;
+         color: #333;
+       }
+
+       button:focus {
+         background-color: #fff;
+         color: #333;
+       }
+
+       ul {
+         margin-top: 15px;
+       }
+     }
+   }
+
+   /* 商品列表  */
+   .product-items-box {
+
+     .box {
+       img {
+         width: 100%;
+         margin: 7.5px auto 7.5px auto;
+       }
+     }
+
+     .product-info {
+       text-align: left;
+       line-height: 14px;
+       min-height: 55px;
+     }
+
+   }
  }
