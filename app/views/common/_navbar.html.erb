@@ -1,6 +1,10 @@
 <div class="row">
   <div class="col-md-12">
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+    <% if current_page?('/') %>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+    <% else %>
+      <div class="navbar navbar-default navbar-fixed-top scroll_navbar" role="navigation">
+    <% end %>
       <div class="container">
         <div class="navbar-header">
           <!--=== 右侧下拉选单（移动端时显示） ===-->
@@ -18,7 +22,7 @@
         <div class="collapse navbar-collapse top-nav" id="menu-4">
           <!--=== 网站连结 ===-->
           <ul class="nav navbar-nav navbar-left">
-            <li><%= link_to('商品列表', '#') %></li>
+            <li><%= link_to('商品列表', 'products/index') %></li>
             <li><%= link_to('特价商品', '#') %></li>
             <li><%= link_to('品牌故事', '#') %></li>
           </ul>
