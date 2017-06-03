@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <!--=== 右侧下拉选单（移动端时显示） ===-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-4" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--===== 网站 Logo/名称 =====-->
+          <%= link_to root_path, class: "navbar-brand logo-box scroll" do %>
+            <i class="fa fa-google-wallet"></i> JDStore
+          <% end %>
+        </div>
+        <div class="collapse navbar-collapse top-nav" id="menu-4">
+          <!--=== 网站连结 ===-->
+          <ul class="nav navbar-nav navbar-left">
+            <li><%= link_to('商品列表', '#') %></li>
+            <li><%= link_to('特价商品', '#') %></li>
+            <li><%= link_to('品牌故事', '#') %></li>
+          </ul>
+          <!--=== 帐号操作 ===-->
+          <ul class='nav navbar-nav  navbar-right'>
+            <li class="divider" role="separator"></li>
+            <li><%= link_to '#' do %> 购物车 <i class='fa fa-shopping-cart'></i> (0)<% end %></li> <!-- 购物车 -->
+            <!-- 注册 / 登入 -->
+            <li><%= link_to('注册', '#') %></li>
+            <li><%= link_to('登入', '#') %></li>
+
+            <!--=== 下拉选单 ===-->
+            <li class='dropdown'>
+              <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                你好，吉米王 <b class='caret'></b>
+              </a>
+              <ul class='dropdown-menu'>
+                <li> <%= link_to('管理后台', '#') %> </li>
+                <li class="divider"> </li>
+                <li> <%= link_to('我的帐户', '#') %> </li>
+                <li> <%= link_to('我的订单', '#') %> </li>
+                <li class="divider"> </li>
+                <li> <%= link_to('登出', '#') %> </li>
+              </ul>
+            </li>
+          </ul>
+          <!--===== 搜索栏 =====-->
+            <div class="input-group search-box">
+              <input type="text" class="form-control" name="keyword" placeholder="搜索商品" value="">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <span><i class="fa fa-search"></i></span> <!-- 搜索栏图标 -->
+                </button>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
