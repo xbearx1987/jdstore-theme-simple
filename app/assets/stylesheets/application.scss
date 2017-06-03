@@ -29,7 +29,7 @@ body {
     text-decoration:none !important; //文字连结移除底线
   }
 
-  /*===== 基础栏位设定======*/
+  /*===== 基础栏位设定 ======*/
   .width-25 {
     width: 25%;
   }
@@ -56,6 +56,7 @@ body {
     color: #fff !important;
   }
 
+  /* 连结-鼠标效果 */
   a:hover,
   a:active,
   a:focus {
@@ -71,6 +72,7 @@ body {
       color: #000 !important;
     }
 
+    /* 连结-鼠标效果 */
     a:hover,
     a:active,
     a:focus {
@@ -95,6 +97,7 @@ body {
       padding: 8px 17px;
     }
 
+    /* 连结-鼠标滑动效果 */
     a:hover {
       background-color: #f0f0f0;
       color: #0070DE !important;
@@ -151,6 +154,7 @@ body {
     color: #ddd;
   }
 
+  /* 连结-鼠标效果 */
   a:hover,
   a:active,
   a:focus {
@@ -230,9 +234,10 @@ body {
 
 /*===== Story 首页-品牌故事 =====*/
 .story-box {
+  /* 区块 */
   background-color: #fff;
   text-align: center;
-  padding: 25px 62.5px 50px 62.5px; //板块间隔
+  padding: 25px 62.5px 50px 62.5px; //区块间隔
 
   /* 标题 */
   h3 {
@@ -262,9 +267,10 @@ body {
 
 /*===== Service 首页-服务优势 =====*/
 .service-box {
+  /* 区块 */
   background-color: #f8f8f8;
-  text-align: center !important;
-  padding: 25px 62.5px 50px 62.5px; //板块间隔
+  text-align: center;
+  padding: 25px 62.5px 50px 62.5px; //区块间隔
 
   /* 图片 */
   img {
@@ -292,6 +298,7 @@ body {
 
 /*===== Categories 首页-商品分类 =====*/
 .categories-box {
+  /* 区块 */
   background-color: #fff;
   text-align: center;
 
@@ -321,6 +328,7 @@ body {
 
 /*===== Show 首页-推荐商品 =====*/
 .show-box {
+  /* 区块 */
   background-color: #f8f8f8;
   text-align: center;
   padding: 50px 0 50px 0;
@@ -350,6 +358,7 @@ body {
 
 /*===== Show 首页-推荐商品 =====*/
 .feedback-box {
+  /* 区块 */
   background-color: #fff;
   text-align: center;
   padding: 50px 0 125px 0;
@@ -404,6 +413,7 @@ body {
 
 /*===== Brands 首页-合作伙伴 =====*/
 .brand-box {
+  /* 区块 */
   background-color: #f8f8f8;
   text-align: center;
   padding: 50px 0 50px 0;
@@ -417,6 +427,7 @@ body {
 
 /*===== Push 首页-立即购买 =====*/
 .push-box {
+  /* 区块 */
   text-align: center;
   padding: 75px 0 0 0;
   height: 200px;
