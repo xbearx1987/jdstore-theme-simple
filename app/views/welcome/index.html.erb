@@ -86,6 +86,39 @@
     </div>
   </section>
 
+  <!--===== 服务优势 =====-->
+  <section class="service-box">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2>服务优势</h2> <!-- 副标题 -->
+        <div class="short-line"></div> <!-- 分隔线 -->
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="box">
+              <%= image_tag("service_1.png") %> <!-- 图示 -->
+              <h3>品质保证</h3> <!-- 标题 -->
+              <p>本店的商品皆通过市场验证，使用最高级的材料制作而成，品质为业界领先标准。</p> <!-- 内文 -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="box">
+              <%= image_tag("service_2.png") %>
+              <h3>快速送达</h3>
+              <p>全国皆享有当天下单、隔日送达的服务，过程中有任何损坏皆由我们负责，请放心购买。</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="box">
+              <%= image_tag("service_3.png") %>
+              <h3>安心使用</h3>
+              <p>设计皆考量人体工学及真实使用情境，使用起来更安心。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!--===== 商品分类 =====-->
   <section class="categories-box">
     <div class="row">
@@ -239,6 +272,43 @@
                 <p>$500</p>
               </div>
             <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--===== 用户反馈 =====-->
+  <section class="feedback-box">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2>用户反馈</h2> <!-- 副标题 -->
+        <div class="short-line"></div> <!-- 分隔线 -->
+        <div id="feedback" class="carousel slide" data-ride="carousel">
+          <!--===== 轮播按钮 =====-->
+          <ol class="carousel-indicators">
+            <li data-target="#feedback" data-slide-to="0" class="active"></li>
+            <li data-target="#feedback" data-slide-to="1"></li>
+            <li data-target="#feedback" data-slide-to="2"></li>
+          </ol>
+
+          <!--===== 轮播内容 =====-->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <p>这是我用过最好的网站，商品众多、下单方便、送货快速，还能订制特殊规格的锅具，强力推荐。</p>
+              <%= image_tag("feedback_1.png") %> <!-- 图片 -->
+              <strong>Eddie - 上班族</strong> <!-- 介绍 -->
+            </div>
+            <div class="item">
+              <p>我是这网站的忠实用户，已经在这买好几年了，质量一直很好，而且不定时会有折扣，真的很划算！</p>
+              <%= image_tag("feedback_2.png") %>
+              <strong>Anna - 家庭主妇</strong>
+            </div>
+            <div class="item">
+              <p>身为一个学生，预算不太多，却也能在这找到便宜又有设计感的器皿，让我生活又添加一份乐趣。</p>
+              <%= image_tag("feedback_3.png") %>
+              <strong>Kobe - 大学生</strong>
+            </div>
           </div>
         </div>
       </div>
