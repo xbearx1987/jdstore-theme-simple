@@ -603,9 +603,31 @@ body {
 
   /* 页面左侧：产品图片 */
   .product-image-box {
+    text-align: left;
 
+    /* 显示产品图片 - 大图 */
+    .main-image {
+      margin-bottom: 30px;
+
+      img {
+        width: 100%;
+        max-width: 700px;
+      }
+    }
+
+    /* 显示产品图片 - 其他小图 */
+    .other-image {
+      margin: 0px 0px 10px 0px;
+
+      img {
+        width: 90%;
+        max-width: 200px;
+      }
+
+    }
 
   }
+
   /* 页面右侧：产品主要资讯及功能 */
   .product-main-box {
     text-align: left;
@@ -613,12 +635,14 @@ body {
     /* 产品标题 */
     .title {
     }
+
     /* 产品價錢 */
     .price {
     }
 
     /* 产品规格 */
-    .specification
+    .specification{
+    }
 
     /* 收藏 */
     .favorite {
