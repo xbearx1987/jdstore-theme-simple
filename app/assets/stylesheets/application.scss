@@ -644,14 +644,19 @@ body {
     .specification{
     }
 
-    /* 收藏 */
-    .favorite {
-      float: left; //向左浮动
-    }
+    .row {
+      margin: 0px 5px 0px 5px;
 
-    /* 社群分享 */
-    .share {
-      float: right; //向右浮动
+      /* 收藏 */
+      .favorite {
+        float: left; //向左浮动
+      }
+
+      /* 社群分享 */
+      .share {
+        float: right; //向右浮动
+      }
+
     }
 
     /* 购买按钮 */
@@ -665,9 +670,9 @@ body {
       text-align: center; //置中
 
       hr.recommend-title {
-        margin: 60px auto 20px auto;
-        max-width: 400px;
-        border-bottom: 1px double #8c8b8b !important;
+        margin: 80px auto 20px auto;
+        max-width: 250px;
+        border-bottom: 0.5px double #8c8b8b !important;
       }
 
       hr.recommend-title:after {
@@ -681,7 +686,7 @@ body {
       }
 
       img {
-        margin: 20px auto 0px auto;
+        margin-top: 20px;
         max-width: 100px;
         max-height: 150px;
       }
