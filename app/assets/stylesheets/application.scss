@@ -435,7 +435,7 @@ body {
 }
 
 
-/*===== 商品页面通用设置 ======*/
+/*===== 商品列表区块设置 ======*/
 .product-box {
   margin-top: 50px;
   text-align: center;
@@ -523,6 +523,144 @@ body {
       text-align: left;
       line-height: 14px;
       min-height: 55px;
+    }
+  }
+}
+
+/*===== 商品信息区块设置 ======*/
+.product-show-box {
+  margin-top: 50px;
+  text-align: center;
+  padding: 0 0 100px 0;
+
+  a {
+    color: #666; //连结字体颜色
+  }
+
+  /* 图片-鼠标滑动效果 */
+  a:hover {
+    color: #0070DE !important;
+    img {
+      opacity: 0.75;
+    }
+  }
+
+  /* 按钮 */
+  .btn {
+    background-color: #fff;
+    margin: 0 10px 0 10px;
+  }
+
+  /* 按钮-鼠标效果 */
+  .btn:hover,
+  .btn:focus {
+    color: #0070DE;
+  }
+
+  /* 广告图 */
+  .intro-box {
+    text-align: center;
+
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* 商品类型 & 品牌选单 */
+  .menu-box {
+  }
+
+  /* 页面路径 & 排序 */
+  .path-sort-box {
+    text-align: left;
+    height: 20px;
+
+    .left-box {
+      float: left; //向左浮动
+    }
+
+    .right-box {
+      float: right; //向右浮动
+
+      button {
+        margin: -15px 0 -15px 0;
+        padding: 7.5px 10px 7.5px 10px;
+        border: 2px solid #666;
+        color: #333;
+      }
+
+      button:focus {
+        background-color: #fff;
+        color: #333;
+      }
+
+      ul {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  /* 页面左侧：产品图片 */
+  .product-image-box {
+
+
+  }
+  /* 页面右侧：产品主要资讯及功能 */
+  .product-main-box {
+    text-align: left;
+
+    /* 产品标题 */
+    .title {
+    }
+    /* 产品價錢 */
+    .price {
+    }
+
+    /* 产品规格 */
+    .specification
+
+    /* 收藏 */
+    .favorite {
+      float: left; //向左浮动
+    }
+
+    /* 社群分享 */
+    .share {
+      float: right; //向右浮动
+    }
+
+    /* 购买按钮 */
+    .purchase {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    /* 推荐商品 * 3 */
+    .recommend {
+      text-align: center; //置中
+
+      hr.recommend-title {
+        margin: 60px auto 20px auto;
+        max-width: 400px;
+        border-bottom: 1px double #8c8b8b !important;
+      }
+
+      hr.recommend-title:after {
+        content: "为您推荐";
+        display: inline-block;
+        position: relative;
+        top: -14px;
+        padding: 0 10px;
+        background: #fff;
+        font-size: 18px;
+      }
+
+      img {
+        margin: 20px auto 0px auto;
+        max-width: 100px;
+        max-height: 150px;
+      }
     }
   }
 }
