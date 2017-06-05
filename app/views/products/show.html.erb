@@ -1,0 +1,194 @@
+<div class="product-show-box">
+  <div class="container">
+    <!--===== 广告图 =====-->
+    <section class="intro-box">
+      <div class="row">
+        <div class="col-md-12">
+          <%= image_tag("products_index_intro.jpg") %>
+        </div>
+      </div>
+    </section>
+
+    <!--===== 商品类型 & 品牌选单 =====-->
+    <section class="menu-box">
+      <!-- 主要类型 -->
+      <div class="row">
+        <div class="dropdown btn-group clearfix">
+          <!-- 选单按钮 -->
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+          类型一 <i class="fa fa-angle-down"></i>
+          </button>
+          <!-- 选单内容：分类 -->
+          <ul class="dropdown-menu">
+            <li><a href="#">分类</a></li>
+            <li><a href="#">分类</a></li>
+            <li><a href="#">分类</a></li>
+          </ul>
+        </div>
+        <!-- 主要类型 -->
+        <div class="dropdown btn-group clearfix">
+          <!-- 选单按钮 -->
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+          类型二 <i class="fa fa-angle-down"></i>
+          </button>
+          <!-- 选单内容：分类 -->
+          <ul class="dropdown-menu">
+            <li><a href="#">分类</a></li>
+            <li><a href="#">分类</a></li>
+            <li><a href="#">分类</a></li>
+          </ul>
+        </div>
+        <!-- 主要类型 -->
+        <div class="dropdown btn-group clearfix">
+          <!-- 选单按钮 -->
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+          类型三 <i class="fa fa-angle-down"></i>
+          </button>
+          <!-- 选单内容：分类 -->
+          <ul class="dropdown-menu">
+            <li><a href="#">分类</a></li>
+            <li><a href="#">分类</a></li>
+            <li><a href="#">分类</a></li>
+          </ul>
+        </div>
+        <!-- 品牌 -->
+        <div class="dropdown btn-group clearfix">
+          <!-- 选单按钮 -->
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+          品牌<i class="fa fa-angle-down"></i>
+          </button>
+          <!-- 选单内容：品牌 -->
+          <ul class="dropdown-menu">
+            <li><a href="#">品牌</a></li>
+            <li><a href="#">品牌</a></li>
+            <li><a href="#">品牌</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr/>
+
+    <!--===== 页面路径 & 排序 =====-->
+    <section class="path-sort-box">
+      <!--=== 产品页面路径 ===-->
+      <div class="left-box">
+        <a href="#">JDStore</a>
+        / <a href="#">类型一</a>
+        / <a href="#">分类</a>
+        / <a href="#">商品名称</a>
+      </div>
+      <!--=== 选单按钮 ===-->
+      <div class="right-box">
+        <div class="dropdown btn-group clearfix">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            預設排序 <span class="caret"></span>
+          </button>
+          <!-- 选单内容：排序方式 -->
+          <ul class="dropdown-menu dropdown-menu-right" selection aria-labelledby="dropdownMenuDivider">
+            <li><a href="#">依热销度</a></li>
+            <li><a href="#">依上架时间</a></li>
+            <li><a href="#">依价格排序：低至高</a></li>
+            <li><a href="#">依价格排序：高至低</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr/>
+
+    <!--===== 商品资讯 =====-->
+    <!--=== 页面左侧：产品图片 ===-->
+    <section class="col-xs-12 col-md-8 product-image-box">
+      <div class="row">
+        <!-- 显示产品图片 - 大图 -->
+        <div class="col-md-12 main-image">
+          <%= image_tag("product_show_01.jpg") %>
+        </div>
+        <!-- 显示产品图片 - 其他小图 -->
+        <div class="col-xs-6 col-sm-3 col-md-4 other-image">
+          <%= image_tag("product_show_02.jpg") %>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-4 other-image">
+          <%= image_tag("product_show_03.jpg") %>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-4 other-image">
+          <%= image_tag("product_show_04.jpg") %>
+        </div>
+      </div>
+    </section>
+
+    <!--=== 页面右侧：产品主要资讯及功能 ===-->
+    <section class="col-xs-12 col-md-4 product-main-box">
+
+      <!-- 产品标题 -->
+      <div class="title">
+        <h1>產品名稱</h1>
+      </div>
+
+      <!-- 产品價錢 -->
+      <div class="price">
+        <h3>$599</h3>
+      </div>
+
+      <hr/>
+
+      <!-- 产品规格：尺寸 / 重量 / 材质 / 产地 / 备注-->
+      <div class="specification">
+        <p>尺寸：直径117mm 高70mm</p>
+        <p>重量：约 210g</p>
+        <p>材质：瓷器</p>
+        <p>产地：日本</p>
+        <p>备注：适用于微波炉及洗碗机。</p>
+      </div>
+
+      <hr/>
+
+      <!-- 收藏 / 社群分享 -->
+      <div class="row">
+        <!-- 收藏 -->
+        <div class="favorite">
+          <a href="#"><i class="fa fa-plus"></i>加入收藏</a>
+        </div>
+
+        <!-- 社群分享 -->
+        <div class="share">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-google"></i></a>
+          <a href="#"><i class="fa fa-pinterest"></i></a>
+          <a href="#"><i class="fa fa-wechat"></i></a>
+        </div>
+      </div>
+
+      <!-- 购买按钮 -->
+      <div class="purchase">
+        <button class="btn btn-lg btn-default">
+          加入购物车
+        </button>
+      </div>
+
+      <!-- 推荐商品 * 3 -->
+      <div class="recommend">
+
+        <hr class="recommend-title">
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <%= link_to '#' do %>
+            <%= image_tag("item_10.jpg") %>
+          <% end %>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <%= link_to '#' do %>
+            <%= image_tag("item_11.jpg") %>
+          <% end %>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <%= link_to '#' do %>
+            <%= image_tag("item_12.jpg") %>
+          <% end %>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
